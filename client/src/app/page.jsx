@@ -1,11 +1,15 @@
+"use client";
 import { toast} from 'react-toastify';
 
-const page = () => {
+const HomePage = () => {
+  const notify = () => {
+    toast("Welcome to the Indian Dev Garrage!");
+  }
   return (
     <div>
-      <button onClick={() => toast("Welcome to the Indian Dev Garrage!")}></button>
+      <button onClick={notify}>Welcome</button>
     </div>
   )
 }
 
-export default page
+export default HomePage
